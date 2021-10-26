@@ -1,0 +1,24 @@
+<Window>
+  <Font shared="true" id="1" name="宋体" size="14" default="true" />
+  <Font shared="true" id="2" name="微软雅黑" size="12" />
+  <Font shared="true" id="3" name="微软雅黑" size="14" />
+  <Container>
+    <Control name="desktopimage"/>
+    <Control name="desktopmask"/>
+
+    <Label name="rectsize" float="true" text=""/>
+    <CanvasContainer name="desktopmaskborder" float="true" pos="0,0,0,0" roundvisible="false" bordersize="2" bordercolor="#FF1f9eff"/>
+
+    <CanvasContainer name="desktopcanvascontainer" float="true" inset="4,4,4,4" bordersize="2" bordercolor="#FF1f9eff" >
+      <Control name="desktopcanvas" mouse="false"/>
+    </CanvasContainer>
+
+    <VerticalLayout name="magnifyingbar" float="true" visible="false">
+      <Control name="magnifyingimg" bordersize="1" bordercolor="#FF00A2E9"/>
+      <Label name="pointpos" height="20" size="14" textcolor="#FFFFFFFF" bkcolor="#66000000" textpadding="5,0,0,0" font="2"/>
+      <Label name="pointcolor" height="20" size="12" textcolor="#FFFFFFFF" bkcolor="#66000000" textpadding="5,0,0,0" font="2"/>
+      <Control float="true" pos="60,0,61,120" bkcolor="FF00A2E9"/>
+      <Control float="true" pos="0,60,120,61" bkcolor="FF00A2E9"/>
+    </VerticalLayout>
+  </Container>
+</Window>

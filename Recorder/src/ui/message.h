@@ -1,0 +1,16 @@
+#pragma once
+#ifndef RECORDER_SRC_UI_MESSAGE_H_
+#define RECORDER_SRC_UI_MESSAGE_H_
+
+#define MSG_USER                      0x0400
+#define MSG_CHOICE_WINDOW_BY_CURSOR   MSG_USER + 101
+#define MSG_SHOW_CANVAS               MSG_USER + 102
+#define MSG_CANVAS_RESTORE            MSG_USER + 103
+#define MSG_CANVAS_RECHOOSE           MSG_USER + 104
+#define MSG_HEADER_EDIT_CHANGED       MSG_USER + 105
+#define MSG_HEADER_UPDATE_EDIT        MSG_USER + 106
+#define MSG_CROP_RECORD_RECT          MSG_USER + 107
+#define MSG_EXCEED_RECORD_LIMIT       MSG_USER + 108
+#define MSG_CHECK_LOW_DISK            MSG_USER + 109
+
+#endif  // RECORDER_SRC_UI_MESSAGE_H_

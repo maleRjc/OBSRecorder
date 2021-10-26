@@ -1,0 +1,17 @@
+<Window bktrans="true" gdiplustext="true">
+  <Font shared="true" id="0" name="宋体" size="6" />
+  <Font shared="true" id="1" name="宋体" size="8" />
+  <Font shared="true" id="2" name="宋体" size="10" />
+  <Font shared="true" id="3" name="宋体" size="12" />
+  <Font shared="true" id="4" name="宋体" size="14" />
+  <Font shared="true" id="5" name="宋体" size="16" />
+  <Font shared="true" id="6" name="宋体" size="18" />
+  <Font shared="true" id="7" name="宋体" size="20" />
+  <Font shared="true" id="8" name="宋体" size="22" />
+  <Container name="wincontainer">
+    <RecorderBorder name="recorder-border" bordercolor="#FF1f9eff"/>
+    <HorizontalLayout inset="2,2,2,2">
+      <HorizontalLayout name="canvas-container"/>
+    </HorizontalLayout>
+  </Container>
+</Window>

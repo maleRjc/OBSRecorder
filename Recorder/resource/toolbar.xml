@@ -1,0 +1,88 @@
+<Window bktrans="true" gdiplustext="true" richeditcorner="1,40,300,1" >
+  <Font shared="true" id="0" name="微软雅黑" size="12" default="true"/>
+  <VerticalLayout>
+    <HorizontalLayout name="toolbar" bkcolor="#FFffffff" height="34" bordersize="1" bordercolor="#ff000000" inset="1,1,1,1">
+      <Button name="rectangle" padding="0,0,1,0" tooltip="矩形" float="false" normalimage="file='skin/toolbar/rectangle.png' source='0,0,32,32'" hotimage="file='skin/toolbar/rectangle.png' source='32,0,64,32'" pushedimage="file='skin/toolbar/rectangle.png' source='64,0,96,32'" disabledimage="file='skin/toolbar/rectangle.png' source='96,0,128,32'"/>
+      <Button name="circle" padding="0,0,1,0" tooltip="椭圆" float="false" normalimage="file='skin/toolbar/circle.png' source='0,0,32,32'" hotimage="file='skin/toolbar/circle.png' source='32,0,64,32'" pushedimage="file='skin/toolbar/circle.png' source='64,0,96,32'" disabledimage="file='skin/toolbar/circle.png' source='96,0,128,32'"/>
+      <Button name="line" padding="0,0,1,0" tooltip="直线" float="false" normalimage="file='skin/toolbar/line.png' source='0,0,32,32'" hotimage="file='skin/toolbar/line.png' source='32,0,64,32'" pushedimage="file='skin/toolbar/line.png' source='64,0,96,32'" disabledimage="file='skin/toolbar/line.png' source='96,0,128,32'"/>
+      <Button name="arrow" padding="0,0,1,0" tooltip="箭头" float="false" normalimage="file='skin/toolbar/arrow.png' source='0,0,32,32'" hotimage="file='skin/toolbar/arrow.png' source='32,0,64,32'" pushedimage="file='skin/toolbar/arrow.png' source='64,0,96,32'" disabledimage="file='skin/toolbar/arrow.png' source='96,0,128,32'"/>
+      <Button name="brush" padding="0,0,1,0" tooltip="画笔" float="false" normalimage="file='skin/toolbar/brush.png' source='0,0,32,32'" hotimage="file='skin/toolbar/brush.png' source='32,0,64,32'" pushedimage="file='skin/toolbar/brush.png' source='64,0,96,32'" disabledimage="file='skin/toolbar/brush.png' source='96,0,128,32'"/>
+      <Button name="highlight" padding="0,0,1,0" tooltip="荧光笔" float="false" normalimage="file='skin/toolbar/highlight.png' source='0,0,32,32'" hotimage="file='skin/toolbar/highlight.png' source='32,0,64,32'" pushedimage="file='skin/toolbar/highlight.png' source='64,0,96,32'" disabledimage="file='skin/toolbar/highlight.png' source='96,0,128,32'"/>
+      <Button name="textbtn" padding="0,0,1,0" tooltip="文字" float="false" normalimage="file='skin/toolbar/text.png' source='0,0,32,32'" hotimage="file='skin/toolbar/text.png' source='32,0,64,32'" pushedimage="file='skin/toolbar/text.png' source='64,0,96,32'" disabledimage="file='skin/toolbar/text.png' source='96,0,128,32'"/>
+
+      <Button name="restore" padding="0,0,1,0" float="false" tooltip="撤销" normalimage="file='skin/toolbar/restore.png' source='0,0,32,32'" hotimage="file='skin/toolbar/restore.png' source='32,0,64,32'" pushedimage="file='skin/toolbar/restore.png' source='64,0,96,32'" disabledimage="file='skin/toolbar/restore.png' source='96,0,128,32'"/>
+      <Button name="rechoose" padding="0,0,1,0" float="false" tooltip="撤销全部" normalimage="file='skin/toolbar/rechoose.png' source='0,0,32,32'" hotimage="file='skin/toolbar/rechoose.png' source='32,0,64,32'" pushedimage="file='skin/toolbar/rechoose.png' source='64,0,96,32'" disabledimage="file='skin/toolbar/rechoose.png' source='96,0,128,32'"/>
+
+      <Control name="separator" float="false" width="1" padding="0,10,1,10" bkimage="file='skin/toolbar/separator.png' dest='0,0,1,14'"/>
+
+      <Button name="pause" padding="0,0,1,0" float="false" tooltip="开始" normalimage="file='skin/toolbar/play.png' source='0,0,32,32'" hotimage="file='skin/toolbar/play.png' source='32,0,64,32'" pushedimage="file='skin/toolbar/play.png' source='64,0,96,32'" disabledimage="file='skin/toolbar/play.png' source='96,0,128,32'"/>
+      <Button name="audio-input" padding="0,0,1,0" float="false" tooltip="麦克风" normalimage="file='skin/toolbar/microphone.png' source='0,0,32,32'" hotimage="file='skin/toolbar/microphone.png' source='32,0,64,32'" pushedimage="file='skin/toolbar/microphone.png' source='64,0,96,32'" disabledimage="file='skin/toolbar/microphone.png' source='96,0,128,32'"/>
+      <Button name="audio-output" padding="0,0,1,0" float="false" tooltip="扬声器" normalimage="file='skin/toolbar/loudspeaker.png' source='0,0,32,32'" hotimage="file='skin/toolbar/loudspeaker.png' source='32,0,64,32'" pushedimage="file='skin/toolbar/loudspeaker.png' source='64,0,96,32'" disabledimage="file='skin/toolbar/loudspeaker.png' source='96,0,128,32'"/>
+      <Button name="cancel" padding="0,0,1,0" float="false" tooltip="取消" normalimage="file='skin/toolbar/cancel.png' source='0,0,32,32'" hotimage="file='skin/toolbar/cancel.png' source='32,0,64,32'" pushedimage="file='skin/toolbar/cancel.png' source='64,0,96,32'" disabledimage="file='skin/toolbar/cancel.png' source='96,0,128,32'"/>
+
+      <Button name="start" width="80" float="false" text="开始录制" textcolor="#FFffffff" tooltip="开始录制" normalimage="file='skin/toolbar/start.png' source='0,0,80,32'" hotimage="file='skin/toolbar/start.png' source='80,0,160,32'" pushedimage="file='skin/toolbar/start.png' source='160,0,240,32'" disabledimage="file='skin/toolbar/start.png' source='240,0,320,32'"/>
+      <TimeButton name="finish" width="120" visible="false" float="false" text="完成" textcolor="#FFffffff" tooltip="完成" normalimage="file='skin/toolbar/finish.png' source='0,0,120,32'" hotimage="file='skin/toolbar/finish.png' source='120,0,240,32'" pushedimage="file='skin/toolbar/finish.png' source='240,0,360,32'" disabledimage="file='skin/toolbar/finish.png' source='360,0,480,32'"/>
+    </HorizontalLayout>
+
+    <HorizontalLayout height="4"/>
+
+    <HorizontalLayout name="detailbar" width="267" height="34" bordersize="1" bordercolor="#ff000000" inset="1,1,1,1" bkcolor="#FFffffff" visible="true">
+      <!--brush config panel-->
+      <HorizontalLayout name="brushwidthbar" width="99" visible="false">
+        <Button name="smallwidth" float="false" normalimage="file='skin/toolbar/smallwidth.png' source='64,0,96,32'" hotimage="file='skin/toolbar/smallwidth.png' source='64,0,96,32'" pushedimage="file='skin/toolbar/smallwidth.png' source='64,0,96,32'" disabledimage="file='skin/toolbar/smallwidth.png' source='96,0,128,32'"/>
+        <Button name="midwidth" float="false" normalimage="file='skin/toolbar/midwidth.png' source='0,0,32,32'" hotimage="file='skin/toolbar/midwidth.png' source='32,0,64,32'" pushedimage="file='skin/toolbar/midwidth.png' source='64,0,96,32'" disabledimage="file='skin/toolbar/midwidth.png' source='96,0,128,32'"/>
+        <Button name="bigwidth" float="false" normalimage="file='skin/toolbar/bigwidth.png' source='0,0,32,32'" hotimage="file='skin/toolbar/bigwidth.png' source='32,0,64,32'" pushedimage="file='skin/toolbar/bigwidth.png' source='64,0,96,32'" disabledimage="file='skin/toolbar/bigwidth.png' source='96,0,128,32'"/>
+        <Control name="separator" float="false" width="1" padding="1,10,1,10" bkimage="file='skin/toolbar/separator.png' dest='0,0,1,14'"/>
+      </HorizontalLayout>
+
+      <HorizontalLayout name="fontbar" width="99" visible="true">
+        <Label name="fonttype" text="宋体" align="center" padding="0,6,0,7" textcolor="#ff333333"/>
+        <Combo name="fontsize" width="48" height="20" padding="0,6,5,7" droptype="droplist" textpadding="6,1,0,1" normalimage="file='skin/toolbar/drop.png' source='0,0,48,20' corner='2,2,2,2'">
+          <ListLabelElement text="8" height="18" />
+          <ListLabelElement text="10" height="18" />
+          <ListLabelElement text="12" height="18" />
+          <ListLabelElement text="14" selected="true" height="18" />
+          <ListLabelElement text="16" height="18" />
+          <ListLabelElement text="18" height="18" />
+          <ListLabelElement text="20" height="18" />
+          <ListLabelElement text="22" height="18" />
+        </Combo>
+        <Control name="separator" float="false" width="1" padding="1,10,1,10" bkimage="file='skin/toolbar/separator.png' dest='0,0,1,14'"/>
+      </HorizontalLayout>
+
+      <!--color button-->
+      <HorizontalLayout name="colorbar">
+        <HorizontalLayout>
+          <Control name="colorpreview" padding="5,4,0,0" bordersize="1" bordercolor="0xff666666" width="24" height="24"/>
+        </HorizontalLayout>
+        <VerticalLayout name="colorbtnsrect" float="true" pos="30,3" width="130" height="26">
+          <HorizontalLayout>
+            <Button name="color1" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+            <Button name="color2" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+            <Button name="color3" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+            <Button name="color4" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+            <Button name="color5" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+            <Button name="color6" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+            <Button name="color7" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+            <Button name="color8" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+            <Button name="color9" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+            <Button name="color10" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666" />
+          </HorizontalLayout>
+          <HorizontalLayout>
+            <Button name="color11" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+            <Button name="color12" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+            <Button name="color13" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+            <Button name="color14" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+            <Button name="color15" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+            <Button name="color16" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+            <Button name="color17" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+            <Button name="color18" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+            <Button name="color19" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+            <Button name="color20" float="false" padding="1,1,1,1" bordersize="1" bordercolor="0xff666666"/>
+          </HorizontalLayout>
+        </VerticalLayout>
+      </HorizontalLayout>
+
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

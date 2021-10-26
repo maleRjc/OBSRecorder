@@ -1,0 +1,14 @@
+<Window size="109,28" caption="81,0,0,28" bktrans="true" gdiplustext="true">
+  <Font shared="true" id="0" name="微软雅黑" size="12" />
+  <HorizontalLayout>
+    <HorizontalLayout bkcolor="#99333333">
+      <HeaderEdit name="record-width" iswidth="true" maxchar="4" multiline="false" align="right" padding="0,6,0,6" font="0" textcolor="#FFffffff" text="123"/>
+      <RichEdit width="6" text="x" enabled="false" align="center" padding="0,6,0,6" font="0" textcolor="#FFffffff"/>
+      <HeaderEdit name="record-height" iswidth="false" maxchar="4" multiline="false" align="left" padding="0,6,0,6" font="0" textcolor="#FFffffff" text="123"/>
+    </HorizontalLayout>
+    <HorizontalLayout width="1"/>
+    <HorizontalLayout width="28">
+      <Control bkimage="file='skin/caption.png'"/>
+    </HorizontalLayout>
+  </HorizontalLayout>
+</Window>
