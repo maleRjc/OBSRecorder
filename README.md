@@ -1,2 +1,2 @@
 # OBSRecorder
-录屏，UI库使用duilib，录制使用obs
+小智双核浏览器录屏插件，UI库使用duilib，录制使用obs
